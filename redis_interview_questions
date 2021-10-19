@@ -1,0 +1,22 @@
+Redis 有哪幾種資料結構
+
+Redis cluster 有哪幾種建構模式
+
+Redis hash map 實作原理
+
+Redis zset 實作原理 (skip list)
+
+Redis 如何淘汰expired 的 key, value 有幾種方式? 
+
+Redis 滿了的時候 如何刪除key, value, 有哪些strategy? (FIFO, RANDOM, LFU, LRU, 不刪除)
+
+Redis的LRU 淘汰機制跟一班的LRU有什麼不同
+
+Redis 操作的時候 有哪幾種更新db和更新cache 的strategy, 優缺點
+
+Redis 的備份機制 (RDB, AOP) 優缺點
+
+Redis hot key掉了, 如何確保不會所有request都進db 撈資料
+
+假設有人刻意選取不存在的key 去打request, 但redis內沒有, db也沒有, 此種惡意攻擊的情況下可以怎麼解 (bloom filter)
+

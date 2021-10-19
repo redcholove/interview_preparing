@@ -1,0 +1,29 @@
+講一下你知道kafka的哪些component
+
+kafka為什麼能支持那麼高的 throughput
+
+kafka 有沒有可能掉資料, 可能原因為何? (Consumer 掉資料, broker failover 掉資料, producer 掉資料), 然後該怎麼解決
+
+kafka ISR?
+
+kafka HW?
+
+kafka 儲存方式? (類LSM TREE, log structure, segment, index file, binary format)
+
+kafka的sendfile
+
+kafka的zero copy
+
+使用kafka該怎麼做idempotent? 可以用其他tool的情況下
+
+可以用其他tool幫忙的情況下如何設計exactly once 執行
+
+說一下 at least once, at most once, exactly once 出現的背後可能原因和細節
+
+kafka內部提供的exactly once如何實現
+
+kafka的offset 機制
+
+Kafka 的replication 怎麼做 sync
+
+Kafka 的replication leader crash 之後 failover 中間 確保資料不會不一致的大概原理
