@@ -1,0 +1,39 @@
+'''
+Example 1:
+
+Input: strs = ["eat","tea","tan","ate","nat","bat"]
+Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+Example 2:
+
+Input: strs = [""]
+Output: [[""]]
+Example 3:
+
+Input: strs = ["a"]
+Output: [["a"]]
+'''
+import collections
+class Solution:
+    def groupAnagrams(self, strs):
+        #把重排列就可以相等的str放到同一個list
+        #initial dict -> key = sorted(str), value = [match str]
+        #traversal dict build result list
+        storage = collections.defaultdict(list)
+        result = []
+        
+        for s in strs:
+            storage[''.join(sorted(s))].append(s)
+        for k in storage:
+            result.append(storage[k])
+            
+        return result
+        
+    
+if __name__ == '__main__':
+    sol = Solution()
+    strs = ["eat","tea","tan","ate","nat","bat"]
+    result = sol.groupAnagrams(strs)
+    print(result)
+    print('success')
+    print('time complexity: O(klogk*n)')
+    print('space complexity: O(n)')
