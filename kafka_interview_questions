@@ -27,3 +27,5 @@ kafka的offset 機制
 Kafka 的replication 怎麼做 sync
 
 Kafka 的replication leader crash 之後 failover 中間 確保資料不會不一致的大概原理
+
+kafka如何使用page cache
