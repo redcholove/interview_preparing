@@ -26,5 +26,5 @@ if __name__ == '__main__':
       result = sol.jump(nums)
       print(result)
       print('success')
-      print('time complexity: O(n)')
+      print('time complexity: O(n^2)')
       print('space complexity: O(n)')
