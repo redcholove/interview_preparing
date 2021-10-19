@@ -1,0 +1,44 @@
+先討論Operating System的三個常考的component
+Program/Process/Thread
+
+
+Program
+還沒被load進 memory的code -> 基本上就是program
+
+Process
+當開始執行 並且load 進 memory的 program -> 此時就會是一個process
+也就是說process 是電腦中 已執行的program 實體
+或是說process 是 os 分配resource 的單位
+
+而process並不是執行的基本單位 執行的基本單位是 thread
+Multitasking OS 中可以同時執行多個process
+但一個CPU 一次只能執行一個process
+
+Thread
+Process可以當成thread的容器
+所以一個process可以有很多thread
+
+
+process內會有一個heap memory space
+可以當作是thread之間的share memory space
+因此thread之間可以共享資源 像變數之類的
+而每個thread本身內部會有一個stack memory space
+用來存放譬如 每次call new function的順序堆疊
+但也因為thread 之間有個heap memory space可以做share memory的關係
+Multi thread 在 concurrency的操作下有可能因為要修改同個resource 造成資料正確性問題
+透過lock可以解決這件事
+但要另外防範dead lock的發生
+
+Process之間沒有辦法共享資源
+但如果有需要的話
+Process communication 有兩種方式
+
+透過一些類似system call的動作
+分別跟os要一塊share memory
+或是建立communication 通道 讓兩個process之間做message passing
+
+再者 process切換的時候要儲存很多資料
+譬如說 process state
+要讓cpu在切process的時候
+回來執行上一個process時 可以知道process當下的狀態或資源
+所以相對性在做context switch的時候 thread的速度會比process快
