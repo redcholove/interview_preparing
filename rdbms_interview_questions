@@ -1,0 +1,28 @@
+Outer join vs inner join
+
+ACID
+
+Trasanction
+
+什麼是index
+
+知道哪些index的儲存結構 (hash, b tree, b+ tree)
+
+那些index 結構的優缺點, 差異
+
+Clusters index vs non clustered index
+
+DB isolation Level 有哪幾種, 分別解決了什麼問題
+
+DB isolation Level 的 實作方式或原理 (mvcc, predicte lock)
+
+DB 有哪幾種 架構模式 (Master-slave, multi-master) 優缺點
+
+如何實作DB sync 和 備份
+
+WAL log? Bin log?
+
+有哪幾種備份方式
+
+Rdbms auto vacuum
+
