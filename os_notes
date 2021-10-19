@@ -25,7 +25,7 @@ process內會有一個heap memory space
 而每個thread本身內部會有一個stack memory space
 用來存放譬如 每次call new function的順序堆疊
 但也因為thread 之間有個heap memory space可以做share memory的關係
-Multi thread 在 concurrency的操作下有可能因為要修改同個resource 造成資料正確性問題
+Multi thread 在 concurrency的操作下有可能因為要修改同個resource 會有race condition
 透過lock可以解決這件事
 但要另外防範dead lock的發生
 
