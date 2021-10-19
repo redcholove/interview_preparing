@@ -1,18 +1,20 @@
 
-1.什麼是process
+什麼是process
 
-2.什麼是thread
+什麼是thread
 
-3.process/thread有什麼差別
+process/thread有什麼差別
 
-4.multi thread vs multi process
+multi thread vs multi process
 
-5.multi thread & lock
+multi thread & lock
 
-6.知道哪幾種lock類型, 差異在哪
+知道哪幾種lock類型, 差異在哪
 
-7.kernal space / user space 差別, 為什麼要這樣設計
+kernal space / user space 差別, 為什麼要這樣設計
 
-8.一份資料從disk撈出來, 到送進network, 中間那份資料被copy了幾次
+一份資料從disk撈出來, 到送進network, 中間那份資料被copy了幾次
 
-9.heap space / stack space / cpu registered
+heap space / stack space / cpu registered
+
+解釋dead lock 或舉例, 怎麼解
