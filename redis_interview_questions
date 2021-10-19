@@ -20,3 +20,4 @@ Redis hot key掉了, 如何確保不會所有request都進db 撈資料
 
 假設有人刻意選取不存在的key 去打request, 但redis內沒有, db也沒有, 此種惡意攻擊的情況下可以怎麼解 (bloom filter)
 
+redis 實作 distributed lock
