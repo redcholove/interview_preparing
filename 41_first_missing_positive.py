@@ -6,6 +6,22 @@ class Solution:
 			if i not in nums:
 				return i
 		return maxPositive + 1
+	
+	def firstMissingPositive(self, nums):
+		maxPositive = len(nums)
+        
+		for i in range(maxPositive):
+		    while nums[i] > 0 and nums[i] <= maxPositive and nums[i] != nums[nums[i]-1]:
+			#這邊有點特殊 要稍微注意一下
+			val = nums[i]
+			targetIdx = val - 1
+			nums[i] = nums[nums[i]-1]
+			nums[targetIdx] = val
+
+		for i in range(len(nums)):
+		    if nums[i] != i + 1:
+			return i + 1
+		return maxPositive + 1
 
 
 if __name__ == '__main__':
